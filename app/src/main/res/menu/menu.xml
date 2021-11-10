@@ -1,7 +1,15 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:title="Menu Activity" />
-    <item android:title="DNI Activity" />
-    <item android:title="Conversor Activity" />
-    <item android:title="Imágenes Activity" />
+    <item
+        android:id="@+id/menuMain"
+        android:title="Main" />
+    <item
+        android:id="@+id/menuDNI"
+        android:title="DNI" />
+    <item
+        android:id="@+id/menuConversor"
+        android:title="Conversor" />
+    <item
+        android:id="@+id/menuImages"
+        android:title="Imágenes" />
 </menu>
