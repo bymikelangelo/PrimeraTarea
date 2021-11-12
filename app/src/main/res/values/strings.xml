@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">PrimeraTarea</string>
-    <string name="descripcion_main">Para navegar por los diferentes apartados de la aplicación pulsa en el menú de opciones de la barra superior.\n\nPulsa los botones inferiores para visualizar la descripción de cada actividad.</string>
+    <string name="descripcion_main">Para navegar por los diferentes apartados de la aplicación pulsa en el menú de opciones de la barra superior.\n\nPara visualizar la descripción de cada actividad pulsa los botones inferiores.</string>
     <string name="descripcion_dni">Deberás introducir un DNI en el cuadro de texto. Al pulsar validar, la aplicación indicará si la letra es o no válida según el algoritmo de cálculo del dígito de control del DNI.</string>
     <string name="descripcion_conversor">Primero, elige una unidad de medida e introduce una cantidad. Para finalizar, deberás pulsar en la unidad de medida a la que deseas convertir la cantidad introducida.</string>
     <string name="descripcion_imagenes">Elige una imagen para visualizar. Podrás visualizar entre un grupo de imágenes en una barra de búsqueda.</string>
+    <string name="etiqueta_dni">Introduce DNI...</string>
 </resources>

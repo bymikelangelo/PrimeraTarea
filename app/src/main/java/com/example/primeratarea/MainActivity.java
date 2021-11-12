@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
@@ -18,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        androidx.appcompat.widget.Toolbar miToolbar = findViewById(R.id.miToobar);
+        androidx.appcompat.widget.Toolbar miToolbar = findViewById(R.id.miToolbar);
         setSupportActionBar(miToolbar);
 
         textDescrAct = findViewById(R.id.textDescrAct);
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu, menu);
+        menu.removeItem(R.id.menuMain);
         return true;
     }
 
@@ -45,9 +47,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void irAActivity (View vista) {
+    public void irAActivity (MenuItem item) {
         Intent intencion;
-        switch (vista.getId()) {
+        switch (item.getItemId()) {
             case R.id.menuDNI:
                 intencion = new Intent(this, DNIActivity.class);
                 startActivity(intencion);

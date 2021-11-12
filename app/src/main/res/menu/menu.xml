@@ -5,11 +5,14 @@
         android:title="Main" />
     <item
         android:id="@+id/menuDNI"
+        android:onClick="irAActivity"
         android:title="DNI" />
     <item
         android:id="@+id/menuConversor"
+        android:onClick="irAActivity"
         android:title="Conversor" />
     <item
         android:id="@+id/menuImages"
+        android:onClick="irAActivity"
         android:title="Imágenes" />
 </menu>
