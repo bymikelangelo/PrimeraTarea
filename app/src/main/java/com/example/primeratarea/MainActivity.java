@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    androidx.appcompat.widget.Toolbar miToolbar;
     TextView textDescrAct;
 
     @Override
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        androidx.appcompat.widget.Toolbar miToolbar = findViewById(R.id.miToolbar);
+        miToolbar = findViewById(R.id.miToolbar);
         setSupportActionBar(miToolbar);
 
         textDescrAct = findViewById(R.id.textDescrAct);
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu, menu);
         menu.removeItem(R.id.menuMain);
+        MenuItem item = findViewById(R.id.menuMain);
         return true;
     }
 

@@ -10,12 +10,13 @@
         android:id="@+id/miToolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/teal_200"
+        android:background="@android:color/holo_blue_dark"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="@string/app_name" />
 
     <TextView
         android:id="@+id/textMain"
@@ -33,13 +34,13 @@
 
     <TextView
         android:id="@+id/textDescrMain"
-        android:layout_width="348dp"
-        android:layout_height="116dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:text="@string/descripcion_main"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,13 +48,14 @@
 
     <TextView
         android:id="@+id/textDescrAct"
-        android:layout_width="348dp"
+        android:layout_width="0dp"
         android:layout_height="286dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/botonConv" />
 
@@ -65,6 +67,7 @@
         android:layout_marginTop="24dp"
         android:onClick="verDescripcion"
         android:text="DNI"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textDescrMain" />
 
@@ -77,6 +80,7 @@
         android:layout_marginEnd="24dp"
         android:onClick="verDescripcion"
         android:text="Conversor"
+        android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/botonImages"
         app:layout_constraintStart_toEndOf="@+id/botonDNI"
         app:layout_constraintTop_toBottomOf="@+id/textDescrMain" />
@@ -89,6 +93,7 @@
         android:layout_marginEnd="32dp"
         android:onClick="verDescripcion"
         android:text="Imagenes"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textDescrMain" />
 

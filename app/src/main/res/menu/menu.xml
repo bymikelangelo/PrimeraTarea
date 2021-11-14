@@ -2,7 +2,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/menuMain"
-        android:title="Main" />
+        android:onClick="irAActivity"
+        android:title="Main"/>
     <item
         android:id="@+id/menuDNI"
         android:onClick="irAActivity"
