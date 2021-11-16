@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         textDescrAct = findViewById(R.id.textDescrAct);
     }
-
+    
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();

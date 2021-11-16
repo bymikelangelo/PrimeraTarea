@@ -89,7 +89,7 @@ public class DNIActivity extends AppCompatActivity {
             Toast.makeText(this, "Debes introducir una letra.", Toast.LENGTH_SHORT).show();
         else {
             char caracter = editDNILetra.getText().charAt(0);
-            if ((caracter >= 'A' & caracter <= 'Z') || (caracter >= 'a' & caracter <= 'Z'))
+            if ((caracter < 'A' & caracter > 'Z') || (caracter < 'a' & caracter > 'z'))
                 Toast.makeText(this, "Debes introducir una letra válida.", Toast.LENGTH_SHORT).show();
             else {
                 numeroDNI = Integer.parseInt(String.valueOf(editDNINum.getText()));
