@@ -5,8 +5,8 @@
     <string name="descripcion_main">Utiliza el menú de opciones de la barra superior para ir a las diferentes actividades de la aplicación.\n\nPulsa en los botones inferiores para visualizar la descripción de cada actividad.</string>
     <string name="descripcion_nif">La actividad utiliza el algoritmo de cálculo de dígito de control del NIF para hacer la validación.\n\nIntroduce un DNI/NIE en el cuadro de texto. Al pulsar validar, la aplicación indicará si la letra es o no válida.</string>
     <string name="descripcion_conversor">La actividad permite transformar una cantidad en metros, kilómetros, centímetros, millas, pies y pulgadas.\n\nIntroduce una cantidad y selecciona una unidad de medida. La aplicación automáticamente mostrará los resultados de conversión en el resto de unidades.</string>
-    <string name="descripcion_imagenes">¿Eres un amante del universo Super Mario?\n\nElige a tu personaje favorito y visualízalo en grande. Utiliza la barra de búsqueda inferior.</string>
-    <string name="etiqueta_descripcion">Descripción de la actividad</string>
+    <string name="descripcion_imagenes">¿Eres un amante del universo Super Mario? Elige a tu personaje favorito y visualízalo en grande.\n\nUtiliza la barra de búsqueda para elegir al personaje.</string>
+    <string name="etiqueta_descripcion">Descripción de las actividades</string>
     <string name="boton_NIF">NIF</string>
     <string name="boton_conversor">Conversor</string>
     <string name="boton_images">Imágenes</string>

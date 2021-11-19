@@ -1,8 +1,10 @@
 package com.example.primeratarea;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -36,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void verDescripcion (View vista) {
         switch (vista.getId()) {
-            case R.id.botonDNI:
+            case R.id.botonNIF:
                 textDescrAct.setText(R.string.descripcion_nif);
                 break;
             case R.id.botonConv:

@@ -19,7 +19,7 @@ import android.widget.Toast;
 public class NIFActivity extends AppCompatActivity {
 
     androidx.appcompat.widget.Toolbar miToolbar;
-    EditText editDNI;
+    EditText editNIF;
     TextView textValidate, textInfomativo;
     ImageView imageValidate;
     Button botonBorrar, botonValidar;
@@ -36,8 +36,8 @@ public class NIFActivity extends AppCompatActivity {
         //activamos el boton hacia atras en la barra de la aplicación.
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        editDNI = findViewById(R.id.editDNI);
-        editDNI.addTextChangedListener(new TextWatcher() {
+        editNIF = findViewById(R.id.editNIF);
+        editNIF.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
@@ -113,7 +113,7 @@ public class NIFActivity extends AppCompatActivity {
     }
 
     public void clickBorrar(View vista) {
-        editDNI.setText("");
+        editNIF.setText("");
         textInfomativo.setText(R.string.informativo_default);
         imageValidate.setImageBitmap(null);
         textValidate.setText("");
@@ -125,12 +125,12 @@ public class NIFActivity extends AppCompatActivity {
     }
 
     public boolean comprobarDatos() {
-        if ((String.valueOf(editDNI.getText()).equals("") || editDNI.getText().length() < 9))
+        if ((String.valueOf(editNIF.getText()).equals("") || editNIF.getText().length() < 9))
             Toast.makeText(this, R.string.toast_nif_fallo_1, Toast.LENGTH_SHORT).show();
         else {
             String cadenaNumeroNIF = "";
-            for (int i = 0; i < editDNI.getText().length(); i++) {
-                char caracter = editDNI.getText().charAt(i);
+            for (int i = 0; i < editNIF.getText().length(); i++) {
+                char caracter = editNIF.getText().charAt(i);
                 if (i == 0) {
                     if ((caracter == 'X') || (caracter == 'x'))
                         cadenaNumeroNIF = cadenaNumeroNIF + "0";
