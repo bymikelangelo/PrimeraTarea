@@ -13,11 +13,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
-        android:text="Cantidad a convertir"
+        android:text="@string/descripcion_cant"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textDNI" />
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
 
     <TextView
         android:id="@+id/textAdvertecia"
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="48dp"
-        android:text="Resultados"
+        android:text="@string/etiqueta_result"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,13 +57,13 @@
         app:title="@string/app_name" />
 
     <TextView
-        android:id="@+id/textDNI"
+        android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="118dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="118dp"
-        android:text="Conversor Activity"
+        android:text="@string/etiqueta_conv"
         android:textAlignment="center"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -76,7 +76,7 @@
         android:layout_height="70dp"
         android:layout_marginStart="32dp"
         android:ems="10"
-        android:hint="Introduce cantidad..."
+        android:hint="@string/hint_cant"
         android:inputType="numberDecimal"
         android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/spinnerUnidades"

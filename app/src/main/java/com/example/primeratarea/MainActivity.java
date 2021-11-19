@@ -31,14 +31,13 @@ public class MainActivity extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu, menu);
         menu.removeItem(R.id.menuMain);
-        MenuItem item = findViewById(R.id.menuMain);
         return true;
     }
 
     public void verDescripcion (View vista) {
         switch (vista.getId()) {
             case R.id.botonDNI:
-                textDescrAct.setText(R.string.descripcion_dni);
+                textDescrAct.setText(R.string.descripcion_nif);
                 break;
             case R.id.botonConv:
                 textDescrAct.setText(R.string.descripcion_conversor);
@@ -52,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
     public void irAActivity (MenuItem item) {
         Intent intencion;
         switch (item.getItemId()) {
-            case R.id.menuDNI:
-                intencion = new Intent(this, DNIActivity.class);
+            case R.id.menuNIF:
+                intencion = new Intent(this, NIFActivity.class);
                 startActivity(intencion);
                 break;
             case R.id.menuConversor:

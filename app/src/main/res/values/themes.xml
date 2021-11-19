@@ -14,4 +14,7 @@
         <!-- Customize your theme here. -->
         <item name="android:textSize">20dp</item>
     </style>
+    <style name="Theme.P" parent="Theme.Design">
+
+    </style>
 </resources>

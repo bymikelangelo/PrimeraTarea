@@ -18,7 +18,7 @@
             android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".DNIActivity"
+            android:name=".NIFActivity"
             android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity

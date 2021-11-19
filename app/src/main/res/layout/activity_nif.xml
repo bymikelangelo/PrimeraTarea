@@ -4,16 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DNIActivity">
+    tools:context=".NIFActivity">
 
     <TextView
-        android:id="@+id/textDNI"
+        android:id="@+id/textInformativo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/informativo_default"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDNI" />
+
+    <TextView
+        android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="118dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="118dp"
-        android:text="DNI Activity"
+        android:text="@string/etiqueta_nif"
         android:textAlignment="center"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,47 +48,33 @@
         app:title="@string/app_name" />
 
     <EditText
-        android:id="@+id/editDNINum"
-        android:layout_width="200dp"
+        android:id="@+id/editDNI"
+        android:layout_width="0dp"
         android:layout_height="70dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
-        android:ems="10"
-        android:hint="Número..."
-        android:inputType="number"
-        android:maxLength="8"
-        android:textSize="34sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <EditText
-        android:id="@+id/editDNILetra"
-        android:layout_width="0dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:ems="10"
-        android:hint="Letra..."
+        android:hint="@string/hint_nif"
         android:inputType="text"
-        android:maxLength="1"
-        android:textSize="34sp"
+        android:maxLength="9"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editDNINum"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
 
     <ImageView
         android:id="@+id/imageValidate"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toTopOf="@+id/textValidate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/botonBorrar"
-        app:layout_constraintTop_toBottomOf="@+id/editDNINum" />
+        app:layout_constraintTop_toBottomOf="@+id/editDNI" />
 
     <TextView
         android:id="@+id/textValidate"
@@ -93,24 +94,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:onClick="clickBorrar"
-        android:text="Borrar"
+        android:text="@string/boton_borrar"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editDNINum" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
-        android:text="Introduce DNI para validar"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textDNI" />
+        app:layout_constraintTop_toBottomOf="@+id/editDNI" />
 
     <Button
         android:id="@+id/botonValidar"
@@ -119,7 +108,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
         android:onClick="clickValidar"
-        android:text="Validar"
+        android:text="@string/boton_validar"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/botonBorrar" />

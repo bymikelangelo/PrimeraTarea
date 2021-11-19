@@ -5,9 +5,9 @@
         android:onClick="irAActivity"
         android:title="Main"/>
     <item
-        android:id="@+id/menuDNI"
+        android:id="@+id/menuNIF"
         android:onClick="irAActivity"
-        android:title="DNI" />
+        android:title="NIF" />
     <item
         android:id="@+id/menuConversor"
         android:onClick="irAActivity"

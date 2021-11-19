@@ -1,10 +1,43 @@
 <resources>
     <string name="app_name">PrimeraTarea</string>
-    <string name="descripcion_main">Para navegar por los diferentes apartados de la aplicación pulsa en el menú de opciones de la barra superior.\n\nPara visualizar la descripción de cada actividad pulsa los botones inferiores.</string>
-    <string name="descripcion_dni">Deberás introducir un DNI en los cuadros de texto. Al pulsar validar, la aplicación indicará si la letra es o no válida según el algoritmo de cálculo del dígito de control del DNI.</string>
-    <string name="descripcion_conversor">Primero, elige una unidad de medida e introduce una cantidad. Para finalizar, deberás pulsar en la unidad de medida a la que deseas convertir la cantidad introducida.</string>
-    <string name="descripcion_imagenes">Elige una imagen para visualizar. Podrás visualizar entre un grupo de imágenes en una barra de búsqueda.</string>
-    <string name="etiqueta_dni">Introduce DNI...</string>
+
+    <string name="etiqueta_main">Main Activity</string>
+    <string name="descripcion_main">Utiliza el menú de opciones de la barra superior para ir a las diferentes actividades de la aplicación.\n\nPulsa en los botones inferiores para visualizar la descripción de cada actividad.</string>
+    <string name="descripcion_nif">La actividad utiliza el algoritmo de cálculo de dígito de control del NIF para hacer la validación.\n\nIntroduce un DNI/NIE en el cuadro de texto. Al pulsar validar, la aplicación indicará si la letra es o no válida.</string>
+    <string name="descripcion_conversor">La actividad permite transformar una cantidad en metros, kilómetros, centímetros, millas, pies y pulgadas.\n\nIntroduce una cantidad y selecciona una unidad de medida. La aplicación automáticamente mostrará los resultados de conversión en el resto de unidades.</string>
+    <string name="descripcion_imagenes">¿Eres un amante del universo Super Mario?\n\nElige a tu personaje favorito y visualízalo en grande. Utiliza la barra de búsqueda inferior.</string>
+    <string name="etiqueta_descripcion">Descripción de la actividad</string>
+    <string name="boton_NIF">NIF</string>
+    <string name="boton_conversor">Conversor</string>
+    <string name="boton_images">Imágenes</string>
+
+    <string name="etiqueta_nif">NIF Activity</string>
+    <string name="hint_nif">Introduce DNI/NIE para validar...</string>
+    <string name="boton_borrar">Borrar</string>
+    <string name="boton_validar">Validar</string>
+    <string name="informativo_default">Escribe X, Y, Z o un número.</string>
+    <string name="informativo_nie_validar">Estás escribiendo un NIE. Pulsa VALIDAR.</string>
+    <string name="informativo_nie_restantes">Estás escribiendo un NIE. Carácteres restantes: </string>
+    <string name="informativo_dni_validar">Estás escribiendo un DNI. Pulsa VALIDAR.</string>
+    <string name="informativo_dni_restantes">Estás escribiendo un DNI. Carácteres restantes: </string>
+    <string name="informativo_fallo">No corresponde a un tipo DNI/NIE</string>
+    <string name="toast_nif_fallo_1">Debes introducir un total de 9 carácteres</string>
+    <string name="toast_nif_fallo_2">Debes introducir X, Y, Z o un número en primera posición.</string>
+    <string name="toast_nif_fallo_3">Debes introducir una letra en última posición.</string>
+    <string name="toast_nif_fallo_4">Debes introducir un dato de tipo DNI/NIE válido.</string>
+    <string name="toast_nif_fallo_5">Fallo en la validación.</string>
+    <string name="validate_si">DNI válido</string>
+    <string name="validate_no">Letra no válida. La correcta sería: </string>
+
+    <string name="etiqueta_conv">Conversor Activity</string>
+    <string name="descripcion_cant">Cantidad a convertir</string>
+    <string name="hint_cant">Introduce cantidad...</string>
+    <string name="etiqueta_result">Resultados</string>
+
+    <string name="advertencia_default">Debes introducir un número</string>
+
+    <string name="etiqueta_images">Elige tu personaje favorito de</string>
+
     <string-array name="unidades_medida">
         <item>metros</item>
         <item>kilómetros</item>

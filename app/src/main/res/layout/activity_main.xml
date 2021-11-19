@@ -25,7 +25,7 @@
         android:layout_marginStart="108dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="108dp"
-        android:text="Main Activity"
+        android:text="@string/etiqueta_main"
         android:textAlignment="center"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,37 +64,53 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:onClick="verDescripcion"
-        android:text="DNI"
+        android:text="@string/boton_NIF"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textDescrMain" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
         android:id="@+id/botonConv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
         android:onClick="verDescripcion"
-        android:text="Conversor"
+        android:text="@string/boton_conversor"
         android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/botonImages"
         app:layout_constraintStart_toEndOf="@+id/botonDNI"
-        app:layout_constraintTop_toBottomOf="@+id/textDescrMain" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
         android:id="@+id/botonImages"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:onClick="verDescripcion"
-        android:text="Imagenes"
+        android:text="@string/boton_images"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/etiqueta_descripcion"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textDescrMain" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

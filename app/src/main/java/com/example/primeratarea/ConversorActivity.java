@@ -2,10 +2,13 @@ package com.example.primeratarea;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.nfc.Tag;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.EditText;
@@ -68,9 +71,35 @@ public class ConversorActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        menu.removeItem(R.id.menuConversor);
+        return true;
+    }
+
+    public void irAActivity (MenuItem item) {
+        Intent intencion;
+        switch (item.getItemId()) {
+            case R.id.menuMain:
+                intencion = new Intent(this, MainActivity.class);
+                startActivity(intencion);
+                break;
+            case R.id.menuNIF:
+                intencion = new Intent(this, NIFActivity.class);
+                startActivity(intencion);
+                break;
+            case R.id.menuImages:
+                intencion = new Intent(this, ImagesActivity.class);
+                startActivity(intencion);
+                break;
+        }
+    }
+
     public void hallarResultados(String texto) {
         if (texto.equals("")) {
-            textAdvertencia.setText("Debes introducir un número");
+            textAdvertencia.setText(R.string.advertencia_default);
             textResultado1.setText("");
             textResultado2.setText("");
             textResultado3.setText("");
