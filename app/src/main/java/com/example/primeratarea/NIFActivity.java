@@ -62,15 +62,19 @@ public class NIFActivity extends AppCompatActivity {
                         textInfomativo.setTextColor(getColor(R.color.black));
                         if (caracteresRestantes == 0)
                             textInfomativo.setText(R.string.informativo_nie_validar);
-                        else
-                            textInfomativo.setText(R.string.informativo_nie_restantes + caracteresRestantes);
+                        else {
+                            //textInfomativo.setText(R.string.informativo_nie_restantes + caracteresRestantes);
+                            textInfomativo.setText("Estás escribiendo un NIE. Carácteres restantes: " + caracteresRestantes);
+                        }
                     }
                     else if (caracter >= '0' & caracter <= '9') {
                         textInfomativo.setTextColor(getColor(R.color.black));
                         if (caracteresRestantes == 0)
                             textInfomativo.setText(R.string.informativo_dni_validar);
-                        else
-                            textInfomativo.setText(R.string.informativo_dni_restantes + caracteresRestantes);
+                        else {
+                            //textInfomativo.setText(R.string.informativo_dni_restantes + caracteresRestantes);
+                            textInfomativo.setText("Estás escribiendo un DNI. Carácteres restantes: " + caracteresRestantes);
+                        }
                     }
                     else {
                         textInfomativo.setTextColor(getColor(R.color.design_default_color_error));
@@ -255,7 +259,8 @@ public class NIFActivity extends AppCompatActivity {
         }
         else {
             imageValidate.setImageResource(R.drawable.cross);
-            textValidate.setText(R.string.validate_no + letraValida);
+            //textValidate.setText(R.string.validate_no + letraValida);
+            textValidate.setText("Letra no válida. La correcta sería: " + letraValida);
         }
     }
 }

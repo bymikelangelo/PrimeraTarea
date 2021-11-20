@@ -11,14 +11,17 @@
         android:theme="@style/PrimeraTarea">
         <activity
             android:name=".ImagesActivity"
+            android:theme="@style/PrimeraTarea.Images"
             android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".ConversorActivity"
+            android:theme="@style/PrimeraTarea.Conversor"
             android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".NIFActivity"
+            android:theme="@style/PrimeraTarea.NIF"
             android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
@@ -31,6 +34,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
